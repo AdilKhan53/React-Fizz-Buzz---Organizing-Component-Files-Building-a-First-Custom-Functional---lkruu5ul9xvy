@@ -23,14 +23,14 @@ const App = () => {
     } else {
       setTempClass('normal')
     }
-  }, [count])
+  }, [counter])
 
   
   return (
     <div id="main">
-    <button onClick={incrementFn}>Increment</button>
+    <button id="increment" onClick={incrementFn}>Increment</button>
     <div className={tempClass}>{counter}</div>
-    <button onClick={decrementFn}>Decrement</button>
+    <button id="decrement" onClick={decrementFn}>Decrement</button>
 
     </div>
   )
